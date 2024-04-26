@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20+Charted&family=Laila:wght@300;400;500;600;700&family=Lugrasimo&family=Teko:wght@300..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+   background-color:#006494;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 60vh;
+  width: 550px;
+
+  border: 2px solid #f7b801;
+  box-shadow: 2px 2px 10px 5px black;
+  overflow: hidden;
+}
+
+.box #disp {
+  height: 10vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  line-height: 10vh;
+  font-family: "Laila", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.box form {
+  height: 35vh;
+  width: 100%;
+  background-color: #c9cba3;
+  line-height: 45vh;
+  text-align: center;
+}
+
+form span {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form #h {
+  color: #d62828;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: bold;
+  user-select: none;
+}
+form #m {
+  color: #f77f00;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: bold;
+  user-select: none;
+}
+form #s {
+  color: #9a031e;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: bold;
+  user-select: none;
+}
+
+.box form input {
+  max-width: 130px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  color: black;
+  background-color: transparent;
+  font-size: 60px;
+  text-align: center;
+  caret-color: transparent;
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.box form input:focus {
+  border: 1px solid gray;
+  border-bottom: 2px solid black;
+  margin: 5px;
+  border-radius:5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.box .btn {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box .btn button {
+  padding: 5px 10px;
+  font-size: 25px;
+  background-color: #292828;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.box .btn button:hover {
+  background-color: #e36414;
+  box-shadow: 0 8px 20px rgba(248, 134, 4, 0.6), 
+                    0 8px 30px rgba(0, 0, 0, 0.15); 
+}
+
+.pointer-none {
+  cursor: pointer;
+  pointer-events: none;
+}
+
+
+@media(max-width:580px){
+    .box {
+        height: 60vh;
+        width: 550px;
+        margin:15px
+    }
+}
+
+@media(max-width:530px){
+
+    .box{
+        margin:15px
+    }
+    
+    
+    .box form #hour,#minute,#second{
+        width:100px;
+        padding:5px;
+        font-size:50px;
+    }
+}
+
+@media(max-width:450px){
+
+    .box{
+        margin:15px
+    }
+    
+    
+    .box form #hour,#minute,#second{
+        width:80px;
+        padding:4px;
+        font-size:30px;
+        font-weight:bolder;
+    }
+}
+
+@media(max-width:380px){
+    
+.box{
+    margin:15px
+}
+
+    .box form #hour,#minute,#second{
+        width:60px;
+        padding:4px;
+        font-size:20px;
+        font-weight:bolder;
+    }
+}
+
+@media(max-width:350px){
+    
+    .box{
+        margin:5px
+    }
+    
+        .box form #hour,#minute,#second{
+            width:59px;
+            padding:3px;
+            font-size:25px;
+            font-weight:bolder;
+           
+        }
+    }
